@@ -32,7 +32,7 @@
                     <label for="filepicker">Select a file:</label>
                     <input class="form-control" id="filepicker" type="file">
                 </div>
-                <button class="btn btn-primary" onclick="handleUpload()" type="button">upload</button>
+                <button class="btn btn-primary" onclick="handleUpload()" type="button">Start</button>
                </form>
                     <button class="btn btn-secondary" onclick="downloadFile()">Download</button>
             </div>
@@ -75,7 +75,7 @@
     function downloadFile(){
         var anchorElement = document.createElement('a')
         anchorElement.href = imgURL;
-        anchorElement.download = 'no_bg.png'
+        anchorElement.download = 'AK_no_bg.png'
         document.body.appendChild(anchorElement);
 
         anchorElement.click();
